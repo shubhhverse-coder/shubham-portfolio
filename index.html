@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#09090f" />
+  <meta name="description" content="Shubham Mandal — Computer Science Engineering student and aspiring software developer." />
+  <title>Shubham Mandal | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#09090f;--panel:#11111b;--panel2:#151522;--text:#f4f2fa;--muted:#a6a2b5;--purple:#a78bfa;--purple2:#7c3aed;--line:rgba(190,170,255,.15);--max:1120px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 75% 5%,rgba(124,58,237,.17),transparent 34%),var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+    .nav{position:sticky;top:0;z-index:10;background:rgba(9,9,15,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.navin{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:-.04em;font-size:1.08rem}.brand span{color:var(--purple)}.links{display:flex;gap:26px;color:var(--muted);font-size:.88rem}.links a:hover,.links a.active{color:var(--text)}.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:8px 11px}
+    .hero{min-height:670px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:40px;padding:92px 0 82px}.eyebrow,.mono{font-family:"DM Mono",monospace;color:var(--purple);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}.hero h1{font-size:clamp(3.2rem,7vw,6.2rem);line-height:.98;letter-spacing:-.075em;margin:20px 0}.hero h1 span{color:var(--purple)}.lead{color:var(--muted);font-size:1.12rem;max-width:590px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--line);padding:12px 18px;border-radius:12px;font-weight:700;font-size:.9rem;transition:.2s}.btn.primary{background:linear-gradient(135deg,#8b5cf6,#6d28d9);border-color:transparent;box-shadow:0 10px 35px rgba(124,58,237,.22)}.btn:hover{transform:translateY(-3px);border-color:var(--purple)}.hero-card{position:relative;min-height:370px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(145deg,rgba(167,139,250,.13),rgba(17,17,27,.94) 55%);padding:28px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.28)}.orb{position:absolute;width:230px;height:230px;border-radius:50%;background:#7c3aed;filter:blur(90px);opacity:.3;right:-45px;top:-60px}.code{position:relative;background:rgba(8,8,14,.7);border:1px solid var(--line);border-radius:16px;padding:22px;font: .9rem/2 "DM Mono",monospace;color:#d9d2ed}.code .dim{color:#777187}.code .key{color:#c4b5fd}.code .str{color:#86efac}.status{position:relative;margin-top:22px;display:flex;align-items:center;gap:10px;color:var(--muted);font-size:.85rem}.dot{width:8px;height:8px;border-radius:50%;background:#86efac;box-shadow:0 0 14px #86efac}
+    section{padding:82px 0}.section-head{margin-bottom:34px}.section-head .eyebrow{margin-bottom:8px}.section-head h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.055em;margin:0}.section-head p{color:var(--muted);max-width:650px;margin:10px 0 0}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:linear-gradient(145deg,rgba(21,21,34,.94),rgba(14,14,23,.94));border:1px solid var(--line);border-radius:19px;padding:25px;transition:.25s}.card:hover{transform:translateY(-5px);border-color:rgba(167,139,250,.5)}.card h3{margin:8px 0 9px;font-size:1.15rem}.card p{color:var(--muted);margin:0}.tagrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.tag{font: .72rem "DM Mono",monospace;color:#d7c9ff;background:rgba(139,92,246,.12);border:1px solid rgba(167,139,250,.2);padding:6px 9px;border-radius:7px}.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.skill{padding:19px;border:1px solid var(--line);background:var(--panel);border-radius:14px}.skill strong{display:block;font-size:1rem}.skill small{color:var(--muted)}.timeline{border-left:1px solid rgba(167,139,250,.35);margin-left:8px;padding-left:26px;display:grid;gap:24px}.event{position:relative}.event:before{content:"";position:absolute;left:-32px;top:8px;width:10px;height:10px;background:var(--purple);border-radius:50%;box-shadow:0 0 16px rgba(167,139,250,.7)}.event .when{font: .74rem "DM Mono",monospace;color:var(--purple)}.event h3{margin:5px 0}.event p{margin:0;color:var(--muted)}.contact{background:linear-gradient(130deg,rgba(124,58,237,.16),rgba(17,17,27,.7));border:1px solid var(--line);border-radius:24px;padding:36px;display:flex;justify-content:space-between;align-items:center;gap:25px}.contact h2{font-size:2rem;letter-spacing:-.05em;margin:0 0 8px}.contact p{margin:0;color:var(--muted)}footer{padding:30px 0 45px;color:var(--muted);font-size:.82rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:24px}.social{display:flex;gap:18px}.social a:hover{color:var(--purple)}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.show{opacity:1;transform:none}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;min-height:auto;padding:76px 0 55px}.hero-card{min-height:300px}.skills{grid-template-columns:repeat(2,1fr)}.links{display:none;position:absolute;top:76px;left:0;right:0;padding:20px 22px;background:#0d0d15;border-bottom:1px solid var(--line);flex-direction:column;gap:16px}.links.open{display:flex}.menu{display:block}.contact{align-items:flex-start;flex-direction:column}}
+    @media(max-width:560px){.wrap{width:min(100% - 32px,var(--max))}.hero h1{font-size:3.45rem}.grid{grid-template-columns:1fr}section{padding:62px 0}.hero-card{padding:18px}.code{font-size:.77rem;padding:16px}.skills{gap:10px}.skill{padding:15px}.contact{padding:25px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
+  </style>
+</head>
+<body>
+<header class="nav"><div class="wrap navin">
+  <a class="brand" href="#home">shubham<span>.</span></a>
+  <nav class="links" id="navlinks"><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a></nav>
+  <button class="menu" id="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+</div></header>
+<main>
+  <div class="wrap hero" id="home">
+    <div class="reveal">
+      <div class="eyebrow">Hello, world! I'm</div>
+      <h1>Shubham<br><span>Mandal.</span></h1>
+      <p class="lead">A Computer Science Engineering student exploring the world of code, problem-solving and building useful digital experiences.</p>
+      <div class="actions"><a class="btn primary" href="#projects">Explore my work ↗</a><a class="btn" href="#contact">Let's connect</a></div>
+      <div class="status"><span class="dot"></span> Open to learning, collaborating & building</div>
+    </div>
+    <div class="hero-card reveal" aria-label="Decorative code card">
+      <div class="orb"></div>
+      <div class="code">
+        <div class="dim">// a little about me</div>
+        <div><span class="key">const</span> developer = {</div>
+        <div>&nbsp;&nbsp;name: <span class="str">"Shubham Mandal"</span>,</div>
+        <div>&nbsp;&nbsp;focus: <span class="str">"Computer Science"</span>,</div>
+        <div>&nbsp;&nbsp;skills: [<span class="str">"Python"</span>,</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"C++"</span>, <span class="str">"SQL"</span>],</div>
+        <div>&nbsp;&nbsp;mindset: <span class="str">"Always learning"</span></div>
+        <div>};</div>
+        <div class="dim">// turning ideas into projects ✦</div>
+      </div>
+      <div class="status"><span class="mono">CURRENTLY</span>&nbsp; Learning • Building • Improving</div>
+    </div>
+  </div>
+
+  <section id="about"><div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">01 / About</div><h2>A curious mind.<br>A builder's mindset.</h2></div>
+    <div class="card reveal"><p>I'm Shubham Mandal, a first-year B.Tech Computer Science and Engineering student at Bansal Institute of Research and Technology, Bhopal. I'm building my foundation in programming and databases, and enjoy turning what I learn into practical projects. I'm interested in software development, technology and continuous learning.</p></div>
+  </div></section>
+
+  <section id="education"><div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">02 / Education</div><h2>Learning in progress.</h2></div>
+    <div class="grid">
+      <article class="card reveal"><div class="mono">2026 — Present</div><h3>B.Tech — Computer Science & Engineering</h3><p>Bansal Institute of Research and Technology (BIRT), Bhopal, Madhya Pradesh</p></article>
+      <article class="card reveal"><div class="mono">Schooling</div><h3>MGM Hr. Sec. School, Bagdona</h3><p>School education in Betul district, Madhya Pradesh.</p></article>
+    </div>
+  </div></section>
+
+  <section id="skills"><div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">03 / Skills</div><h2>Tools in my toolkit.</h2><p>Technologies I'm learning and using as I grow as a developer.</p></div>
+    <div class="skills reveal">
+      <div class="skill"><strong>Python</strong><small>Programming</small></div>
+      <div class="skill"><strong>C++</strong><small>Programming</small></div>
+      <div class="skill"><strong>SQL</strong><small>Database queries</small></div>
+      <div class="skill"><strong>Problem solving</strong><small>Developing</small></div>
+    </div>
+  </div></section>
+
+  <section id="projects"><div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">04 / Projects</div><h2>Learning by building.</h2><p>A project from my programming journey. More work will be added as I build.</p></div>
+    <article class="card reveal">
+      <div class="mono">Python · SQL · Academic project</div><h3>Library Management System</h3>
+      <p>A Python-based library management project backed by an SQL database. It includes core workflows for adding, viewing, searching, issuing, returning and deleting book records.</p>
+      <div class="tagrow"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Database</span></div>
+      <p style="margin-top:18px;font-size:.82rem">Repository link coming soon — add it here once the project is uploaded to GitHub.</p>
+    </article>
+  </div></section>
+
+  <section id="journey"><div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">05 / Achievements & Experience</div><h2>Beyond the classroom.</h2><p>Learning, participating and contributing through campus activities.</p></div>
+    <div class="timeline reveal">
+      <div class="event"><div class="when">2026</div><h3>E-Cell BGI — NEC 2026</h3><p>Participating in the NEC community and its student tasks and activities.</p></div>
+      <div class="event"><div class="when">2026</div><h3>Garba Fest — Reel Making</h3><p>Participated in the college Garba Fest reel-making activity.</p></div>
+      <div class="event"><div class="when">ONGOING</div><h3>Independent learning & projects</h3><p>Building programming skills through coursework and hands-on practice.</p></div>
+    </div>
+    <div class="section-head reveal" style="margin-top:55px"><div class="eyebrow">06 / Certifications</div><h2>Credentials.</h2><p>Certifications will be added here as they are earned. No certificates are listed yet.</p></div>
+  </div></section>
+
+  <section id="contact"><div class="wrap">
+    <div class="contact reveal"><div><div class="eyebrow">07 / Contact</div><h2>Let's build something.</h2><p>Have an idea, opportunity or just want to connect? Reach out.</p></div>
+      <div class="actions" style="margin:0"><a class="btn primary" href="mailto:shubhammm2011@gmail.com">Email me ↗</a><a class="btn" href="https://www.linkedin.com/in/shubham-mandal-3a839342b/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="btn" href="https://github.com/shubhhverse-coder" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+    </div>
+  </div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Shubham Mandal. Built with curiosity.</span><div class="social"><a href="https://github.com/shubhhverse-coder" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/shubham-mandal-3a839342b/" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:shubhammm2011@gmail.com">Email</a></div></div></footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const menu = document.getElementById('menu'), nav = document.getElementById('navlinks');
+  menu.addEventListener('click', () => { const open = nav.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)); });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('open'); menu.setAttribute('aria-expanded','false'); }));
+  const observer = new IntersectionObserver(entries => entries.forEach(entry => { if(entry.isIntersecting){entry.target.classList.add('show');observer.unobserve(entry.target);}}), {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
